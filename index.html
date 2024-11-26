@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Index - Skyline Digital Template</title>
+</head>
+<style>
+
+</style>
+
+<body class="font-sans">
+    <header class="sticky z-50 top-0 right-0 left-0 bg-white">
+        <div
+            class="w-full container mx-auto flex justify-between items-center px-10 py-5 bg-white text-black opacity-100">
+
+            <div>
+                <img src="./assets/img/logo.png" alt="logo" class="w-[150px]">
+            </div>
+            <div class="hamburger-menu relative flex flex-col justify-between gap-1 sm:hidden cursor-pointer">
+                <span class="bg-black w-6 h-1 rounded-md"></span>
+                <span class="bg-black w-6 h-1 rounded-md"></span>
+                <span class="bg-black w-6 h-1 rounded-md"></span>
+            </div>
+            <nav
+                class="hidden navigation z-99 fixed top-0 left-0 right-0 bottom-0 bg-slate-300 p-5 sm:static sm:block sm:bg-transparent sm:p-0">
+                <ul
+                    class="flex flex-col p-5 h-full bg-white opacity-100 text-black gap-4 rounded-xl sm:flex-row sm:p-0 transition-all">
+                    <li><a href="index.html" class="nav-link hover:text-sky-600 ease-linear">Home</a></li>
+                    <li><a href="#about" class="nav-link hover:text-sky-600 ease-linear">About</a></li>
+                    <li><a href="#services" class="nav-link hover:text-sky-600 ease-linear">Services</a></li>
+                    <li><a href="#team" class="nav-link hover:text-sky-600 ease-linear">Team</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-sky-600 ease-linear">Contact</a></li>
+                </ul>
+                <button class="close-hamburger-menu absolute top-7 right-10 text-2xl sm:hidden">&times;</button>
+            </nav>
+        </div>
+    </header>
+    <section class="bg-[url('/assets/img/hero-bg.jpg')] bg-cover">
+        <div data-aos="fade-right"
+            class="z-999a container mx-auto min-h-[600px] p-5 flex flex-col gap-5 items-start justify-center text-white">
+            <h1 class="text-4xl font-bold lg:text-5xl 2xl:text-6xl opacity-100">Welcome to <span
+                    class="text-sky-300">Skyline Digital</span></h1>
+            <h2 class="text-xl lg:text-2xl 2xl:text-3xl">Crafting digital experiences that inspire.</h2>
+            <p class="lg:text-xl 2xl:text-2xl">We specialize in creating beautiful, user-friendly websites that help
+                your business stand out. Let’s build something extraordinary together</p>
+            <a href="#pricing"
+                class="bg-sky-600 text-white px-5 py-3 rounded-md hover:bg-white hover:text-black transition-all ease-in 2xl:text-xl">Get
+                Started</a>
+        </div>
+
+    </section>
+    <section id="about">
+        <div class="container mx-auto flex flex-col justify-center items-center px-5 py-20 gap-7 text-center">
+            <h1 data-aos="zoom-in" class="text-3xl font-bold">About Us</h1>
+            <h2 data-aos="zoom-in">We are a team of passionate web developers and designers committed to delivering
+                cutting-edge solutions.
+                With years of experience and a focus on innovation, we aim to help businesses achieve their digital
+                goals.</h2>
+            <div class="flex flex-col gap-7">
+                <h2 data-aos="zoom-in" class="text-2xl font-bold">Why Choose Us?</h2>
+                <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
+                    <div data-aos="fade-up"
+                        class="flex flex-col gap-5 text-start items-start shadow-xl p-5 cursor-pointer hover:bg-sky-600 hover:text-white rounded-xl group transition-all">
+                        <i class="fa-solid fa-lightbulb text-5xl text-sky-600 group-hover:text-white"></i>
+                        <h3 class="text-xl font-semibold">Creative and professional solutions</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nulla!</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="100"
+                        class="flex flex-col gap-5 text-start items-start shadow-xl p-5 cursor-pointer hover:bg-sky-600 hover:text-white rounded-xl group transition-all">
+                        <i class="fa-solid fa-headset text-5xl text-sky-600 group-hover:text-white"></i>
+                        <h3 class="text-xl font-semibold">Dedicated customer support</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nulla!</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200"
+                        class="flex flex-col gap-5 text-start items-start shadow-xl p-5 cursor-pointer hover:bg-sky-600 hover:text-white rounded-xl group transition-all">
+                        <i class="fa-solid fa-chart-column text-5xl text-sky-600 group-hover:text-white"></i>
+                        <h3 class="text-xl font-semibold">Proven track record of success</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nulla!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="bg-sky-100">
+        <div
+            class="container mx-auto flex flex-col justify-center items-center px-5 py-20 gap-7 text-center text-black">
+            <h1 class="text-3xl font-bold" data-aos="zoom-in">Our Services</h1>
+            <h2 data-aos="zoom-in">We offer a wide range of web development and design solutions tailored to meet your
+                needs.</h2>
+            <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
+                <div data-aos="fade-up"
+                    class="flex flex-row items-center gap-5 text-start shadow-xl p-5 bg-white rounded-xl cursor-pointer border-4 hover:border-sky-600 transition-all">
+                    <i class="fa-solid fa-pen-nib text-3xl text-sky-600"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold">Website Design</h3>
+                        <p>Modern and responsive designs that captivate.</p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100"
+                    class="flex flex-row items-center gap-5 text-start shadow-xl p-5 bg-white rounded-xl cursor-pointer border-4 hover:border-sky-600 transition-all">
+                    <i class="fa-solid fa-desktop text-3xl text-sky-600"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold">Web Development</h3>
+                        <p>Scalable and efficient websites using the latest technologies.</p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200"
+                    class="flex flex-row items-center gap-5 text-start shadow-xl p-5 bg-white rounded-xl cursor-pointer border-4 hover:border-sky-600 transition-all">
+                    <i class="fa-solid fa-cart-shopping text-3xl text-sky-600"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold">E-Commerce Solutions</h3>
+                        <p>Boost your sales with a powerful online store.</p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300"
+                    class="flex flex-row items-center gap-5 text-start shadow-xl p-5 bg-white rounded-xl cursor-pointer border-4 hover:border-sky-600 transition-all">
+                    <i class="fa-solid fa-magnifying-glass text-3xl text-sky-600"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold">SEO Optimization</h3>
+                        <p>Rank higher and drive organic traffic to your website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <div
+            class="container mx-auto flex flex-col justify-center items-center px-5 py-20 gap-7 text-center text-black">
+            <h1 data-aos="zoom-in" class="text-3xl font-bold">Meet Our Team</h1>
+            <h2 data-aos="zoom-in">Our team is the backbone of our success. Each member brings their unique skills and
+                creativity to the
+                table</h2>
+            <!-- Slider main container -->
+            <div class="swiper w-full" data-aos="fade-up">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class=" flex flex-col gap-5 p-5 bg-white justify-center items-center">
+                            <img src="./assets/img/team/1.webp" alt="1" class="rounded-full w-[150px]">
+                            <h3 class="text-xl font-semibold">John Doe</h3>
+                            <p>Founder & Lead Developer</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class=" flex flex-col gap-5 p-5 bg-white justify-center items-center">
+                            <img src="./assets/img/team/2.webp" alt="1" class="rounded-full w-[150px]">
+                            <h3 class="text-xl font-semibold">John Doe</h3>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class=" flex flex-col gap-5 p-5 bg-white justify-center items-center">
+                            <img src="./assets/img/team/3.webp" alt="1" class="rounded-full w-[150px]">
+                            <h3 class="text-xl font-semibold">John Doe</h3>
+                            <p>SEO Specialist</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class=" flex flex-col gap-5 p-5 bg-white justify-center items-center">
+                            <img src="./assets/img/team/4.webp" alt="1" class="rounded-full w-[150px]">
+                            <h3 class="text-xl font-semibold">John Doe</h3>
+                            <p>Analyst</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="bg-sky-100">
+        <div
+            class="container mx-auto flex flex-col justify-center items-center px-5 py-20 gap-7 text-center text-black">
+            <h1 data-aos="zoom-in" class="text-3xl font-bold">Check Our Pricing</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 w-full">
+                <div data-aos="fade-up">
+                    <h2 class="w-full p-3 bg-slate-200">Free Plan</h2>
+                    <div class="bg-white p-7 flex flex-col gap-5">
+                        <h3 class="text-5xl">$0</h3>
+                        <ul class="flex flex-col gap-3 text-sm">
+                            <li>Aida dere</li>
+                            <li>Nec feugiat nisl</li>
+                            <li>Nulla at volutpat dola</li>
+                            <li>Pharetra massa</li>
+                            <li>Massa ultricies mi</li>
+                        </ul>
+                        <button
+                            class="bg-slate-200 text-black px-5 py-3 hover:text-black hover:bg-white rounded-md text-md transition-all">Get
+                            Started</button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="bg-sky-600 text-white p-3 w-full">Business</h2>
+                    <div class="bg-white p-7 flex flex-col gap-5">
+                        <h3 class="text-5xl">$19</h3>
+                        <ul class="flex flex-col gap-3 text-sm">
+                            <li>Aida dere</li>
+                            <li>Nec feugiat nisl</li>
+                            <li>Nulla at volutpat dola</li>
+                            <li>Pharetra massa</li>
+                            <li>Massa ultricies mi</li>
+                        </ul>
+                        <button
+                            class="bg-sky-600 text-white px-5 py-3 hover:text-black hover:bg-white rounded-md text-md transition-all">Buy
+                            Now</button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="w-full p-3 bg-slate-200">Developer</h2>
+                    <div class="bg-white p-7 flex flex-col gap-5">
+                        <h3 class="text-5xl">$24</h3>
+                        <ul class="flex flex-col gap-3 text-sm">
+                            <li>Aida dere</li>
+                            <li>Nec feugiat nisl</li>
+                            <li>Nulla at volutpat dola</li>
+                            <li>Pharetra massa</li>
+                            <li>Massa ultricies mi</li>
+                        </ul>
+                        <button
+                            class="bg-sky-600 text-white px-5 py-3 hover:text-black hover:bg-white rounded-md text-md transition-all">Buy
+                            Now</button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h2 class="w-full p-3 bg-slate-200">Advanced</h2>
+                    <div class="bg-white p-7 flex flex-col gap-5">
+                        <h3 class="text-5xl">$49</h3>
+                        <ul class="flex flex-col gap-3 text-sm">
+                            <li>Aida dere</li>
+                            <li>Nec feugiat nisl</li>
+                            <li>Nulla at volutpat dola</li>
+                            <li>Pharetra massa</li>
+                            <li>Massa ultricies mi</li>
+                        </ul>
+                        <button
+                            class="bg-sky-600 text-white px-5 py-3 hover:text-black hover:bg-white rounded-md text-md transition-all">Buy
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="bg-sky-100">
+        <div
+            class="container mx-auto flex flex-col justify-center items-center px-5 py-20 gap-7 text-center text-black">
+            <h1 data-aos="zoom-in" class="text-3xl font-bold">Frequently Asked Questions</h1>
+            <div data-aos="fade-up" class="w-full max-w-2xl p-4 bg-white shadow-md rounded-lg">
+                <!-- Accordion Item 1 -->
+                <div data-aos="fade-up" data-aos-delay="100" class="border-b border-gray-200">
+                    <button onclick="toggleAccordion('item1')"
+                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
+                        <span class="font-semibold">What services do you offer?</span>
+                        <svg id="icon-item1" class="w-5 h-5 transform transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="content-item1" class="hidden py-2 text-gray-600">
+                        We specialize in web development, web design, SEO optimization, and e-commerce solutions.
+                        Whether you need a new website or want to enhance your online presence, we’re here to help!
+                    </div>
+                </div>
+
+
+                <!-- Accordion Item 2 -->
+                <div data-aos="fade-up" data-aos-delay="200" class="border-b border-gray-200">
+                    <button onclick="toggleAccordion('item2')"
+                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
+                        <span class="font-semibold">How long does it take to complete a project?</span>
+                        <svg id="icon-item2" class="w-5 h-5 transform transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="content-item2" class="hidden py-2 text-gray-600">
+                        The timeline depends on the complexity of the project. For standard websites, it typically takes
+                        2-4 weeks. Custom or larger projects may require more time.
+                    </div>
+                </div>
+
+
+                <!-- Accordion Item 3 -->
+                <div data-aos="fade-up" data-aos-delay="300" class="border-b border-gray-200">
+                    <button onclick="toggleAccordion('item3')"
+                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
+                        <span class="font-semibold">What technologies do you use?</span>
+                        <svg id="icon-item3" class="w-5 h-5 transform transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="content-item3" class="hidden py-2 text-gray-600">
+                        We use modern and reliable technologies like HTML, CSS, JavaScript, ReactJS, and Next.js to
+                        create fast, responsive, and secure websites.
+                    </div>
+                </div>
+
+
+                <!-- Accordion Item 4 -->
+                <div data-aos="fade-up" data-aos-delay="400" class="border-b border-gray-200">
+                    <button onclick="toggleAccordion('item4')"
+                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
+                        <span class="font-semibold">Can I request revisions after the project is completed?</span>
+                        <svg id="icon-item4" class="w-5 h-5 transform transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="content-item4" class="hidden py-2 text-gray-600">
+                        Yes, we provide post-launch support and are happy to make revisions to ensure you’re satisfied with the final product.
+                    </div>
+                </div>
+
+
+                <!-- Accordion Item 5 -->
+                <div data-aos="fade-up" data-aos-delay="500" class="border-b border-gray-200">
+                    <button onclick="toggleAccordion('item5')"
+                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
+                        <span class="font-semibold">Do you offer maintenance services?</span>
+                        <svg id="icon-item5" class="w-5 h-5 transform transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="content-item5" class="hidden py-2 text-gray-600">
+                        Absolutely! We offer ongoing maintenance plans to keep your website updated, secure, and running smoothly.
+                    </div>
+                </div>
+
+
+                <!-- Accordion Item 6 -->
+                <div data-aos="fade-up" data-aos-delay="600" class="border-b border-gray-200">
+                    <button onclick="toggleAccordion('item6')"
+                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
+                        <span class="font-semibold">How much do your services cost?</span>
+                        <svg id="icon-item6" class="w-5 h-5 transform transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="content-item6" class="hidden py-2 text-gray-600">
+                        Pricing depends on the scope of your project. Contact us with your requirements, and we’ll provide a customized quote.
+                    </div>
+                </div>
+
+
+                <!-- Accordion Item 7 -->
+                <div data-aos="fade-up" data-aos-delay="700" class="border-b border-gray-200">
+                    <button onclick="toggleAccordion('item7')"
+                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
+                        <span class="font-semibold"> Can you work with my existing website?</span>
+                        <svg id="icon-item7" class="w-5 h-5 transform transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="content-item7" class="hidden py-2 text-gray-600">
+                        Yes, we can improve or redesign your existing website to align with your current goals and brand identity.
+                    </div>
+                </div>
+
+
+                <!-- Accordion Item 8 -->
+                <div data-aos="fade-up" data-aos-delay="800" class="border-b border-gray-200">
+                    <button onclick="toggleAccordion('item8')"
+                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
+                        <span class="font-semibold">How do I get started?</span>
+                        <svg id="icon-item8" class="w-5 h-5 transform transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="content-item8" class="hidden py-2 text-gray-600">
+                        It’s simple! Just head over to our Contact page, fill out the form, and we’ll get back to you within 24 hours to discuss your project.
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container mx-auto flex flex-col justify-center items-center px-5 py-20 gap-7 text-center">
+            <h1 data-aos="zoom-in" class="text-3xl font-bold">Get in Touch</h1>
+            <h2 data-aos="zoom-in">We’d love to hear from you! Whether you have a project in mind or just want to say
+                hi, drop us a
+                message.</h2>
+            <div class="grid grid-cols-1 gap-5 lg:grid-cols-2 w-full">
+                <div data-aos="fade-up" class="flex flex-col gap-5 p-10 shadow-xl">
+                    <div class="flex gap-5 items-center">
+                        <div class="bg-slate-100 p-2 rounded-full aspect-square w-[50px] h-[50px]">
+                            <i class="fa-solid fa-location-dot text-sky-600 text-3xl"></i>
+                        </div>
+                        <div class="flex items-start flex-col text-start">
+                            <h2 class="font-bold">Address</h2>
+                            <h3>A108 Adam Street, New York, NY 535022</h3>
+                        </div>
+                    </div>
+                    <div class="flex gap-5 items-center">
+                        <div class="bg-slate-100 p-2 rounded-full aspect-square w-[50px] h-[50px]">
+                            <i class="fa-solid fa-phone text-sky-600 text-3xl"></i>
+                        </div>
+                        <div class="flex items-start flex-col text-start">
+                            <h2 class="font-bold">Call Us</h2>
+                            <h3>+1 5589 55488 55</h3>
+                        </div>
+                    </div>
+                    <div class="flex gap-5 items-center">
+                        <div class="bg-slate-100 p-2 rounded-full aspect-square w-[50px] h-[50px]">
+                            <i class="fa-solid fa-envelope text-sky-600 text-3xl"></i>
+                        </div>
+                        <div class="flex items-start flex-col text-start">
+                            <h2 class="font-bold">Email Us</h2>
+                            <h3>info@example.com</h3>
+                        </div>
+                    </div>
+                    <div class="flex gap-5 items-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d734895.7753044644!2d-74.094299!3d40.803365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e1!3m2!1sen!2sus!4v1732243045547!5m2!1sen!2sus"
+                            class="w-full h-[300px] xl:h-[400px]" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100" class="flex flex-col gap-5 p-10 shadow-xl">
+                    <div class="flex gap-5">
+                        <div class="flex flex-col gap-3 items-start w-full">
+                            <label for="name">Your Name</label>
+                            <input id="name" type="text" class="border border-sky-600 w-full p-2">
+                        </div>
+                        <div class="flex flex-col gap-3 items-start w-full">
+                            <label for="email">Your Email</label>
+                            <input id="email" type="text" class="border border-sky-600 w-full p-2">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 items-start">
+                        <label for="subject">Subject</label>
+                        <input id="subject" type="text" class="border border-sky-600 w-full p-2">
+                    </div>
+                    <div class="flex flex-col gap-3 items-start">
+                        <label for="message">Message</label>
+                        <textarea id="message" type="text" class="border border-sky-600 w-full p-2"
+                            rows="10"></textarea>
+                    </div>
+                    <button
+                        class="p-3 w-fit cursor-pointer rounded-md bg-sky-600 text-white hover:text-black hover:bg-slate-100 transition-all">Send
+                        Message</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-10 gap-7 ">
+        <div class="flex flex-col gap-3">
+            <img src="./assets/img/logo.png" alt="logo" class="w-[130px]">
+            <h2>Helping your products connect with the world through effective web solutions.</h2>
+        </div>
+        <div class="flex flex-col gap-3">
+            <h2 class="text-xl font-semibold">Usefull Links</h2>
+            <ul class="flex flex-col gap-3">
+                <li><a class="hover:text-sky-600 transition-all" href="index.html">Home</a></li>
+                <li><a class="hover:text-sky-600 transition-all" href="#about">About</a></li>
+                <li><a class="hover:text-sky-600 transition-all" href="#services">Services</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-col gap-3">
+            <h2 class="text-xl font-semibold">Our Services</h2>
+            <ul class="flex flex-col gap-3">
+                <li><a class="hover:text-sky-600 transition-all" href="#">Web Design</a></li>
+                <li><a class="hover:text-sky-600 transition-all" href="#">Web Development</a></li>
+                <li><a class="hover:text-sky-600 transition-all" href="#">E-commerce Solutions</a></li>
+                <li><a class="hover:text-sky-600 transition-all" href="#">SEO Optimization</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-col gap-3">
+            <h2 class="text-xl font-semibold">Follow us</h2>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <div class="flex gap-3 text-2xl">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+    <div class="p-10 bg-slate-100 text-center">
+        <h2>Copyright &copy; 2024. All Rights Reserved</h2>
+        <p>Developed By <a href="https://instagram.com/pajri.bp" class="font-semibold text-sky-600">@pajri.bp</a></p>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/navigation.js" defer></script>
+    <script src="./assets/js/accordion.js" defer></script>
+    <script src="./assets/js/aosinit.js"></script>
+    <script src="./assets/js/swipperconfig.js"></script>
+</body>
+
+</html>
