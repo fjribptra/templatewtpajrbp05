@@ -11,122 +11,152 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Index - Skyline Digital Template</title>
+    <title>Index - Toyota Astra Motor Template</title>
 </head>
 <style>
 
 </style>
 
 <body class="font-sans">
-    <header class="sticky z-50 top-0 right-0 left-0 bg-white">
+    <header class="sticky z-50 top-0 right-0 left-0 bg-red-500 z-[9999]">
         <div
-            class="w-full container mx-auto flex justify-between items-center px-5 py-5 xl:px-20 bg-white text-black opacity-100">
+            class="w-full container mx-auto flex justify-between items-center px-5 py-5 xl:px-20 bg-transparent text-black opacity-100">
 
             <div>
-                <img src="./assets/img/logo.png" alt="logo" class="w-[150px]">
+                <img src="./assets/img/logo-white.png" alt="logo" class="w-[150px]">
             </div>
             <div class="hamburger-menu relative flex flex-col justify-between gap-1 sm:hidden cursor-pointer">
-                <span class="bg-black w-6 h-1 rounded-md"></span>
-                <span class="bg-black w-6 h-1 rounded-md"></span>
-                <span class="bg-black w-6 h-1 rounded-md"></span>
+                <span class="bg-white w-6 h-1 rounded-md"></span>
+                <span class="bg-white w-6 h-1 rounded-md"></span>
+                <span class="bg-white w-6 h-1 rounded-md"></span>
             </div>
             <nav
-                class="hidden navigation z-99 fixed top-0 left-0 right-0 bottom-0 bg-slate-300 p-5 sm:static sm:block sm:bg-transparent sm:p-0">
+                class="hidden navigation z-99 fixed top-0 left-0 right-0 bottom-0 bg-red-500 p-5 sm:static sm:block sm:bg-transparent sm:p-0">
                 <ul
-                    class="flex flex-col p-5 h-full bg-white opacity-100 text-black gap-4 rounded-xl sm:flex-row sm:p-0 transition-all">
-                    <li><a href="index.html" class="nav-link hover:text-sky-600 ease-linear">Home</a></li>
-                    <li><a href="#about" class="nav-link hover:text-sky-600 ease-linear">About</a></li>
-                    <li><a href="#services" class="nav-link hover:text-sky-600 ease-linear">Services</a></li>
-                    <li><a href="#team" class="nav-link hover:text-sky-600 ease-linear">Team</a></li>
-                    <li><a href="#contact" class="nav-link hover:text-sky-600 ease-linear">Contact</a></li>
+                    class="flex flex-col p-5 h-full bg-transparent opacity-100 text-white gap-4 rounded-xl sm:flex-row sm:p-0 transition-all">
+                    <li><a href="index.html" class="nav-link hover:underline ease-linear">Home</a></li>
+                    <li><a href="#about" class="nav-link hover:underline ease-linear">About</a></li>
+                    <li><a href="#team" class="nav-link hover:underline ease-linear">Team</a></li>
+                    <li><a href="#contact" class="nav-link hover:underline ease-linear">Contact</a></li>
                 </ul>
-                <button class="close-hamburger-menu absolute top-7 right-10 text-2xl sm:hidden">&times;</button>
+                <button
+                    class="close-hamburger-menu absolute text-white top-7 right-10 text-2xl sm:hidden">&times;</button>
             </nav>
         </div>
     </header>
-    <section class="bg-[url('/assets/img/hero-bg.jpg')] bg-cover">
-        <div data-aos="fade-right"
-            class="z-999a container mx-auto min-h-[600px] p-5 flex flex-col gap-5 items-start justify-center text-white xl:px-20">
-            <h1 class="text-4xl font-bold lg:text-5xl 2xl:text-6xl opacity-100">Welcome to <span
-                    class="text-sky-300">Skyline Digital</span></h1>
-            <h2 class="text-xl lg:text-2xl 2xl:text-3xl">Crafting digital experiences that inspire.</h2>
-            <p class="lg:text-xl 2xl:text-2xl">We specialize in creating beautiful, user-friendly websites that help
-                your business stand out. Let’s build something extraordinary together</p>
-            <a href="#pricing"
-                class="bg-sky-600 text-white px-5 py-3 rounded-md hover:bg-white hover:text-black transition-all ease-in 2xl:text-xl">Get
-                Started</a>
+    <section class="relative bg-[url('/assets/img/hero-bg.jpg')] bg-cover py-10">
+        <div class="absolute top-0 left-0 right-0 bottom-0 bg-white opacity-80"></div>
+        <div class="container mx-auto min-h-[600px] p-5 grid grid-cols-1 md:grid-cols-2 gap-5 items-start justify-center text-black xl:px-20">
+            <div class="z-[999] w-full h-full flex flex-col gap-5 justify-center">
+                <h1 class="text-xl z-[999]  font-bold lg:text-xl 2xl:text-xl opacity-100">Toyota Astra Motor
+                </h1>
+                <h1 class="text-4xl z-[999]  font-bold lg:text-6xl 2xl:text-7xl opacity-100">Kaizen continuous improvement
+                </h1>
+                <p class="lg:text-xl z-[999] 2xl:text-2xl"> Toyota's rich history, commitment to excellence, and forward-thinking approach make it much more than just an automotive manufacturer – it's a symbol of innovation, reliability, and sustainability in an ever-evolving world.</p>
+                <a href="#pricing"
+                    class="z-[999] w-fit bg-red-500 text-white px-5 py-3 rounded-md hover:bg-white hover:text-black transition-all ease-in 2xl:text-xl">Car List</a>
+            </div>
+            <div class="z-[999] w-full h-full flex flex-col gap-5 justify-center">
+                <img src="./assets/img/2-Emotional-Red.png" alt="Emotional Red" class="w-full">
+            </div>
         </div>
 
     </section>
-    <section id="about">
-        <div class="container mx-auto flex flex-col justify-center items-center px-5 xl:px-20 py-20 gap-7 text-center">
-            <h1 data-aos="zoom-in" class="text-3xl font-bold">About Us</h1>
-            <h2 data-aos="zoom-in">We are a team of passionate web developers and designers committed to delivering
-                cutting-edge solutions.
-                With years of experience and a focus on innovation, we aim to help businesses achieve their digital
-                goals.</h2>
-            <div class="flex flex-col gap-7">
-                <h2 data-aos="zoom-in" class="text-2xl font-bold">Why Choose Us?</h2>
-                <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
-                    <div data-aos="fade-up"
-                        class="flex flex-col gap-5 text-start items-start shadow-xl p-5 cursor-pointer hover:bg-sky-600 hover:text-white rounded-xl group transition-all">
-                        <i class="fa-solid fa-lightbulb text-5xl text-sky-600 group-hover:text-white"></i>
-                        <h3 class="text-xl font-semibold">Creative and professional solutions</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nulla!</p>
+    <section id="about" class="py-20">
+        <div class="container mx-auto min-h-[600px] p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-start justify-center text-black xl:px-20">
+        <div class="z-[999] w-full h-full flex flex-col gap-5 justify-center lg:col-span-2">
+            <h1 class="text-xl z-[999]  lg:text-xl 2xl:text-xl opacity-100">About Us
+            </h1>
+            <h1 class="text-4xl z-[999]  font-bold lg:text-6xl 2xl:text-7xl opacity-100">With operations in over 170 countries and regions.
+            </h1>
+            <p class="lg:text-xl z-[999] 2xl:text-2xl">Toyota Motor Corporation is a renowned multinational automotive manufacturer headquartered in Toyota City, Aichi Prefecture, Japan. Established in 1937 by Kiichiro Toyoda, Toyota has grown to become one of the largest automobile manufacturers in the world, known for its commitment to innovation, quality, and sustainability.</p>
+            <p class="lg:text-xl z-[999] 2xl:text-2xl">Toyota’s journey began with the production of its first passenger car, the Model AA, in 1936. Since then, the company has consistently pushed boundaries, introducing groundbreaking technologies and manufacturing processes. Notably, Toyota pioneered the concept of Lean Manufacturing, which revolutionized the automotive industry by minimizing waste and maximizing efficiency.</p>
+        </div>
+        <div class="z-[999] w-full h-full flex flex-col gap-5 justify-center">
+            <div class="bg-[url('./assets/img/fitur1_22.jpg')] w-full aspect-video md:aspect-[3/4] bg-cover bg-center rounded-md"></div>
+        </div>
+    </div>
+    </section>
+    <section>
+        <div
+            class="container mx-auto flex flex-col justify-center items-center px-5 lg:px-10 py-20 gap-10 lg:gap-20 text-center text-black">
+            <h1 class="text-4xl lg:text-5xl font-bold">Top Features</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 w-full h-full">
+                <div class="relative bg-[url('./assets/img/fitur1_29-768x432.jpg')] aspect-[3/4] bg-cover bg-center w-full rounded-md">
+                    <h2 class="text-white font-bold z-[99] absolute bottom-5 left-5 text-3xl opacity-100">Design</h2>
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-black opacity-50">
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="100"
-                        class="flex flex-col gap-5 text-start items-start shadow-xl p-5 cursor-pointer hover:bg-sky-600 hover:text-white rounded-xl group transition-all">
-                        <i class="fa-solid fa-headset text-5xl text-sky-600 group-hover:text-white"></i>
-                        <h3 class="text-xl font-semibold">Dedicated customer support</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nulla!</p>
+                </div>
+                <div class="relative bg-[url('./assets/img/interior-fitur3-1200x675_0.jpg')] aspect-[3/4] bg-cover bg-center w-full rounded-md">
+                    <h2 class="text-white font-bold z-[99] absolute bottom-5 left-5 text-3xl opacity-100">Comfort</h2>
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-black opacity-50">
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="200"
-                        class="flex flex-col gap-5 text-start items-start shadow-xl p-5 cursor-pointer hover:bg-sky-600 hover:text-white rounded-xl group transition-all">
-                        <i class="fa-solid fa-chart-column text-5xl text-sky-600 group-hover:text-white"></i>
-                        <h3 class="text-xl font-semibold">Proven track record of success</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nulla!</p>
+                </div>
+                <div class="relative bg-[url('./assets/img/fitur3_18.jpg')] aspect-[3/4] bg-cover bg-center w-full rounded-md">
+                    <h2 class="text-white font-bold z-[99] absolute bottom-5 left-5 text-3xl opacity-100">Premium</h2>
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-black opacity-50">
+                    </div>
+                </div>
+                <div class="relative bg-[url('./assets/img/fitur1_22.jpg')] aspect-[3/4] bg-cover bg-center w-full rounded-md">
+                    <h2 class="text-white font-bold z-[99] absolute bottom-5 left-5 text-3xl opacity-100">Elegant</h2>
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-black opacity-50">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="services" class="bg-sky-100">
+    <section>
         <div
-            class="container mx-auto flex flex-col justify-center items-center px-5 py-20 gap-7 text-center text-black">
-            <h1 class="text-3xl font-bold" data-aos="zoom-in">Our Services</h1>
-            <h2 data-aos="zoom-in">We offer a wide range of web development and design solutions tailored to meet your
-                needs.</h2>
-            <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
-                <div data-aos="fade-up"
-                    class="flex flex-row items-center gap-5 text-start shadow-xl p-5 bg-white rounded-xl cursor-pointer border-4 hover:border-sky-600 transition-all">
-                    <i class="fa-solid fa-pen-nib text-3xl text-sky-600"></i>
-                    <div>
-                        <h3 class="text-xl font-semibold">Website Design</h3>
-                        <p>Modern and responsive designs that captivate.</p>
+            class="container mx-auto flex flex-col justify-center items-center px-5 xl:px-20 py-20 gap-7 text-center text-black">
+            <h1 class="text-4xl lg:text-5xl font-bold">Toyota News Update</h1>
+            <h2 class="lg:text-xl 2xl:text-2xl">Toyota has been at the forefront of automotive innovation, introducing numerous groundbreaking technologies over the years. From hybrid-electric vehicles (HEVs) like the Prius, which revolutionized the industry’s approach to fuel efficiency</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="rounded-md shadow-lg cursor-pointer">
+                    <div class="bg-slate-100">
+                        <img src="./assets/img/01_attitude-black_1.png" alt="camry hybrid">
+                    </div>
+                    <div class="p-5 flex items-start">
+                        <h2 class="font-bold text-2xl">Camry Hybrid</h2>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="100"
-                    class="flex flex-row items-center gap-5 text-start shadow-xl p-5 bg-white rounded-xl cursor-pointer border-4 hover:border-sky-600 transition-all">
-                    <i class="fa-solid fa-desktop text-3xl text-sky-600"></i>
-                    <div>
-                        <h3 class="text-xl font-semibold">Web Development</h3>
-                        <p>Scalable and efficient websites using the latest technologies.</p>
+                <div class="rounded-md shadow-lg cursor-pointer">
+                    <div class="bg-slate-100">
+                        <img src="./assets/img/2-Emotional-Red.png" alt="yaris gr">
+                    </div>
+                    <div class="p-5 flex items-start">
+                        <h2 class="font-bold text-2xl">Yaris GR</h2>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="200"
-                    class="flex flex-row items-center gap-5 text-start shadow-xl p-5 bg-white rounded-xl cursor-pointer border-4 hover:border-sky-600 transition-all">
-                    <i class="fa-solid fa-cart-shopping text-3xl text-sky-600"></i>
-                    <div>
-                        <h3 class="text-xl font-semibold">E-Commerce Solutions</h3>
-                        <p>Boost your sales with a powerful online store.</p>
+                <div class="rounded-md shadow-lg cursor-pointer">
+                    <div class="bg-slate-100">
+                        <img src="./assets/img/2-Black.png" alt="alphard">
+                    </div>
+                    <div class="p-5 flex items-start">
+                        <h2 class="font-bold text-2xl">Alphard</h2>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="300"
-                    class="flex flex-row items-center gap-5 text-start shadow-xl p-5 bg-white rounded-xl cursor-pointer border-4 hover:border-sky-600 transition-all">
-                    <i class="fa-solid fa-magnifying-glass text-3xl text-sky-600"></i>
-                    <div>
-                        <h3 class="text-xl font-semibold">SEO Optimization</h3>
-                        <p>Rank higher and drive organic traffic to your website.</p>
+                <div class="rounded-md shadow-lg cursor-pointer">
+                    <div class="bg-slate-100">
+                        <img src="./assets/img/2-Platinum-White-Pearl-Attitude-Black.png" alt="yaris cross">
+                    </div>
+                    <div class="p-5 flex items-start">
+                        <h2 class="font-bold text-2xl">Yaris Cross</h2>
+                    </div>
+                </div>
+                <div class="rounded-md shadow-lg cursor-pointer">
+                    <div class="bg-slate-100">
+                        <img src="./assets/img/1-Dual-Tone-Attitude-Black-MC-Platinum-White-Pearl.png" alt="corolla cross">
+                    </div>
+                    <div class="p-5 flex items-start">
+                        <h2 class="font-bold text-2xl">Corolla Cross</h2>
+                    </div>
+                </div>
+                <div class="rounded-md shadow-lg cursor-pointer">
+                    <div class="bg-slate-100">
+                        <img src="./assets/img/01-gray-metallic-vx-r-type.png" alt="land crusier">
+                    </div>
+                    <div class="p-5 flex items-start">
+                        <h2 class="font-bold text-2xl">Land Crusier</h2>
                     </div>
                 </div>
             </div>
@@ -135,274 +165,56 @@
     <section id="team">
         <div
             class="container mx-auto flex flex-col justify-center items-center px-5 xl:px-20 py-20 gap-7 text-center text-black">
-            <h1 data-aos="zoom-in" class="text-3xl font-bold">Meet Our Team</h1>
-            <h2 data-aos="zoom-in">Our team is the backbone of our success. Each member brings their unique skills and
-                creativity to the
-                table</h2>
+            <h1 class="text-4xl lg:text-5xl font-bold">Personal Sales</h1>
+            <h2 class="lg:text-xl 2xl:text-2xl">Toyota has been at the forefront of automotive innovation, introducing numerous groundbreaking technologies over the years. From hybrid-electric vehicles (HEVs) like the Prius, which revolutionized the industry’s approach to fuel efficiency</h2>
             <!-- Slider main container -->
-            <div class="swiper w-full" data-aos="fade-up">
+            <div class="swiper w-full">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
                         <div class=" flex flex-col gap-5 p-5 bg-white justify-center items-center">
-                            <img src="./assets/img/team/1.webp" alt="1" class="rounded-full w-[150px]">
-                            <h3 class="text-xl font-semibold">John Doe</h3>
-                            <p>Founder & Lead Developer</p>
+                            <img src="./assets/img/team/1.webp" alt="1" class="w-full aspect-square">
+                            <h3 class="text-2xl font-semibold">John Doe</h3>
+                            <p class="text-xl">Founder</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class=" flex flex-col gap-5 p-5 bg-white justify-center items-center">
-                            <img src="./assets/img/team/2.webp" alt="1" class="rounded-full w-[150px]">
-                            <h3 class="text-xl font-semibold">John Doe</h3>
-                            <p>Designer</p>
+                            <img src="./assets/img/team/2.webp" alt="1" class="w-full aspect-square">
+                            <h3 class="text-2xl font-semibold">John Doe</h3>
+                            <p class="text-xl">Marketing Head</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class=" flex flex-col gap-5 p-5 bg-white justify-center items-center">
-                            <img src="./assets/img/team/3.webp" alt="1" class="rounded-full w-[150px]">
-                            <h3 class="text-xl font-semibold">John Doe</h3>
-                            <p>SEO Specialist</p>
+                            <img src="./assets/img/team/3.webp" alt="1" class="w-full aspect-square">
+                            <h3 class="text-2xl font-semibold">John Doe</h3>
+                            <p class="text-xl">Senior Editor</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class=" flex flex-col gap-5 p-5 bg-white justify-center items-center">
-                            <img src="./assets/img/team/4.webp" alt="1" class="rounded-full w-[150px]">
-                            <h3 class="text-xl font-semibold">John Doe</h3>
-                            <p>Analyst</p>
+                            <img src="./assets/img/team/4.webp" alt="1" class="w-full aspect-square">
+                            <h3 class="text-2xl font-semibold">John Doe</h3>
+                            <p class="text-xl">Managing Partner</p>
                         </div>
                     </div>
+                    
                 </div>
-                <!-- If we need pagination -->
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </div>
-    </section>
-    <section id="pricing" class="bg-sky-100">
-        <div
-            class="container mx-auto flex flex-col justify-center items-center px-5 xl:px-20 py-20 gap-7 text-center text-black">
-            <h1 data-aos="zoom-in" class="text-3xl font-bold">Check Our Pricing</h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 w-full">
-                <div data-aos="fade-up">
-                    <h2 class="w-full p-3 bg-slate-200">Free Plan</h2>
-                    <div class="bg-white p-7 flex flex-col gap-5">
-                        <h3 class="text-5xl">$0</h3>
-                        <ul class="flex flex-col gap-3 text-sm">
-                            <li>Aida dere</li>
-                            <li>Nec feugiat nisl</li>
-                            <li>Nulla at volutpat dola</li>
-                            <li>Pharetra massa</li>
-                            <li>Massa ultricies mi</li>
-                        </ul>
-                        <button
-                            class="bg-slate-200 text-black px-5 py-3 hover:text-black hover:bg-white rounded-md text-md transition-all">Get
-                            Started</button>
-                    </div>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="100">
-                    <h2 class="bg-sky-600 text-white p-3 w-full">Business</h2>
-                    <div class="bg-white p-7 flex flex-col gap-5">
-                        <h3 class="text-5xl">$19</h3>
-                        <ul class="flex flex-col gap-3 text-sm">
-                            <li>Aida dere</li>
-                            <li>Nec feugiat nisl</li>
-                            <li>Nulla at volutpat dola</li>
-                            <li>Pharetra massa</li>
-                            <li>Massa ultricies mi</li>
-                        </ul>
-                        <button
-                            class="bg-sky-600 text-white px-5 py-3 hover:text-black hover:bg-white rounded-md text-md transition-all">Buy
-                            Now</button>
-                    </div>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="200">
-                    <h2 class="w-full p-3 bg-slate-200">Developer</h2>
-                    <div class="bg-white p-7 flex flex-col gap-5">
-                        <h3 class="text-5xl">$24</h3>
-                        <ul class="flex flex-col gap-3 text-sm">
-                            <li>Aida dere</li>
-                            <li>Nec feugiat nisl</li>
-                            <li>Nulla at volutpat dola</li>
-                            <li>Pharetra massa</li>
-                            <li>Massa ultricies mi</li>
-                        </ul>
-                        <button
-                            class="bg-sky-600 text-white px-5 py-3 hover:text-black hover:bg-white rounded-md text-md transition-all">Buy
-                            Now</button>
-                    </div>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="300">
-                    <h2 class="w-full p-3 bg-slate-200">Advanced</h2>
-                    <div class="bg-white p-7 flex flex-col gap-5">
-                        <h3 class="text-5xl">$49</h3>
-                        <ul class="flex flex-col gap-3 text-sm">
-                            <li>Aida dere</li>
-                            <li>Nec feugiat nisl</li>
-                            <li>Nulla at volutpat dola</li>
-                            <li>Pharetra massa</li>
-                            <li>Massa ultricies mi</li>
-                        </ul>
-                        <button
-                            class="bg-sky-600 text-white px-5 py-3 hover:text-black hover:bg-white rounded-md text-md transition-all">Buy
-                            Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="faq" class="bg-sky-100">
-        <div
-            class="container mx-auto flex flex-col justify-center items-center px-5 py-20 gap-7 text-center text-black">
-            <h1 data-aos="zoom-in" class="text-3xl font-bold">Frequently Asked Questions</h1>
-            <div data-aos="fade-up" class="w-full max-w-2xl p-4 bg-white shadow-md rounded-lg">
-                <!-- Accordion Item 1 -->
-                <div data-aos="fade-up" data-aos-delay="100" class="border-b border-gray-200">
-                    <button onclick="toggleAccordion('item1')"
-                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
-                        <span class="font-semibold">What services do you offer?</span>
-                        <svg id="icon-item1" class="w-5 h-5 transform transition-transform"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div id="content-item1" class="hidden py-2 text-gray-600">
-                        We specialize in web development, web design, SEO optimization, and e-commerce solutions.
-                        Whether you need a new website or want to enhance your online presence, we’re here to help!
-                    </div>
-                </div>
-
-
-                <!-- Accordion Item 2 -->
-                <div data-aos="fade-up" data-aos-delay="200" class="border-b border-gray-200">
-                    <button onclick="toggleAccordion('item2')"
-                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
-                        <span class="font-semibold">How long does it take to complete a project?</span>
-                        <svg id="icon-item2" class="w-5 h-5 transform transition-transform"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div id="content-item2" class="hidden py-2 text-gray-600">
-                        The timeline depends on the complexity of the project. For standard websites, it typically takes
-                        2-4 weeks. Custom or larger projects may require more time.
-                    </div>
-                </div>
-
-
-                <!-- Accordion Item 3 -->
-                <div data-aos="fade-up" data-aos-delay="300" class="border-b border-gray-200">
-                    <button onclick="toggleAccordion('item3')"
-                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
-                        <span class="font-semibold">What technologies do you use?</span>
-                        <svg id="icon-item3" class="w-5 h-5 transform transition-transform"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div id="content-item3" class="hidden py-2 text-gray-600">
-                        We use modern and reliable technologies like HTML, CSS, JavaScript, ReactJS, and Next.js to
-                        create fast, responsive, and secure websites.
-                    </div>
-                </div>
-
-
-                <!-- Accordion Item 4 -->
-                <div data-aos="fade-up" data-aos-delay="400" class="border-b border-gray-200">
-                    <button onclick="toggleAccordion('item4')"
-                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
-                        <span class="font-semibold">Can I request revisions after the project is completed?</span>
-                        <svg id="icon-item4" class="w-5 h-5 transform transition-transform"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div id="content-item4" class="hidden py-2 text-gray-600">
-                        Yes, we provide post-launch support and are happy to make revisions to ensure you’re satisfied with the final product.
-                    </div>
-                </div>
-
-
-                <!-- Accordion Item 5 -->
-                <div data-aos="fade-up" data-aos-delay="500" class="border-b border-gray-200">
-                    <button onclick="toggleAccordion('item5')"
-                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
-                        <span class="font-semibold">Do you offer maintenance services?</span>
-                        <svg id="icon-item5" class="w-5 h-5 transform transition-transform"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div id="content-item5" class="hidden py-2 text-gray-600">
-                        Absolutely! We offer ongoing maintenance plans to keep your website updated, secure, and running smoothly.
-                    </div>
-                </div>
-
-
-                <!-- Accordion Item 6 -->
-                <div data-aos="fade-up" data-aos-delay="600" class="border-b border-gray-200">
-                    <button onclick="toggleAccordion('item6')"
-                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
-                        <span class="font-semibold">How much do your services cost?</span>
-                        <svg id="icon-item6" class="w-5 h-5 transform transition-transform"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div id="content-item6" class="hidden py-2 text-gray-600">
-                        Pricing depends on the scope of your project. Contact us with your requirements, and we’ll provide a customized quote.
-                    </div>
-                </div>
-
-
-                <!-- Accordion Item 7 -->
-                <div data-aos="fade-up" data-aos-delay="700" class="border-b border-gray-200">
-                    <button onclick="toggleAccordion('item7')"
-                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
-                        <span class="font-semibold"> Can you work with my existing website?</span>
-                        <svg id="icon-item7" class="w-5 h-5 transform transition-transform"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div id="content-item7" class="hidden py-2 text-gray-600">
-                        Yes, we can improve or redesign your existing website to align with your current goals and brand identity.
-                    </div>
-                </div>
-
-
-                <!-- Accordion Item 8 -->
-                <div data-aos="fade-up" data-aos-delay="800" class="border-b border-gray-200">
-                    <button onclick="toggleAccordion('item8')"
-                        class="w-full flex justify-between items-center py-3 text-left font-medium text-gray-700 focus:outline-none">
-                        <span class="font-semibold">How do I get started?</span>
-                        <svg id="icon-item8" class="w-5 h-5 transform transition-transform"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div id="content-item8" class="hidden py-2 text-gray-600">
-                        It’s simple! Just head over to our Contact page, fill out the form, and we’ll get back to you within 24 hours to discuss your project.
-                    </div>
-                </div>
-
-
             </div>
         </div>
     </section>
     <section id="contact">
         <div class="container mx-auto flex flex-col justify-center items-center px-5 xl:px-20 py-20 gap-7 text-center">
-            <h1 data-aos="zoom-in" class="text-3xl font-bold">Get in Touch</h1>
-            <h2 data-aos="zoom-in">We’d love to hear from you! Whether you have a project in mind or just want to say
-                hi, drop us a
-                message.</h2>
+            <h1 class="text-4xl lg:text-5xl font-bold">Get in Touch</h1>
+            <h2 class="lg:text-xl 2xl:text-2xl">
+                If you’d like to send us some feedback, lorem ipsum dolor sit amet, consectetur adipisicing eli sed do.</h2>
             <div class="grid grid-cols-1 gap-5 lg:grid-cols-2 w-full">
-                <div data-aos="fade-up" class="flex flex-col gap-5 p-5 shadow-xl">
+                <div class="flex flex-col gap-5 p-5 shadow-xl">
                     <div class="flex gap-5 items-center">
                         <div class="bg-slate-100 p-2 rounded-full aspect-square w-[50px] h-[50px]">
-                            <i class="fa-solid fa-location-dot text-sky-600 text-3xl"></i>
+                            <i class="fa-solid fa-location-dot text-red-500 text-3xl"></i>
                         </div>
                         <div class="flex items-start flex-col text-start">
                             <h2 class="font-bold">Address</h2>
@@ -411,7 +223,7 @@
                     </div>
                     <div class="flex gap-5 items-center">
                         <div class="bg-slate-100 p-2 rounded-full aspect-square w-[50px] h-[50px]">
-                            <i class="fa-solid fa-phone text-sky-600 text-3xl"></i>
+                            <i class="fa-solid fa-phone text-red-500 text-3xl"></i>
                         </div>
                         <div class="flex items-start flex-col text-start">
                             <h2 class="font-bold">Call Us</h2>
@@ -420,7 +232,7 @@
                     </div>
                     <div class="flex gap-5 items-center">
                         <div class="bg-slate-100 p-2 rounded-full aspect-square w-[50px] h-[50px]">
-                            <i class="fa-solid fa-envelope text-sky-600 text-3xl"></i>
+                            <i class="fa-solid fa-envelope text-red-500 text-3xl"></i>
                         </div>
                         <div class="flex items-start flex-col text-start">
                             <h2 class="font-bold">Email Us</h2>
@@ -434,35 +246,35 @@
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="100" class="flex flex-col gap-5 p-5 shadow-xl">
+                <div data-aos-delay="100" class="flex flex-col gap-5 p-5 shadow-xl">
                     <div class="flex gap-5">
                         <div class="flex flex-col gap-3 items-start w-full">
                             <label for="name">Your Name</label>
-                            <input id="name" type="text" class="border border-sky-600 w-full p-2">
+                            <input id="name" type="text" class="border border-red-500 w-full p-2">
                         </div>
                         <div class="flex flex-col gap-3 items-start w-full">
                             <label for="email">Your Email</label>
-                            <input id="email" type="text" class="border border-sky-600 w-full p-2">
+                            <input id="email" type="text" class="border border-red-500 w-full p-2">
                         </div>
                     </div>
                     <div class="flex flex-col gap-3 items-start">
                         <label for="subject">Subject</label>
-                        <input id="subject" type="text" class="border border-sky-600 w-full p-2">
+                        <input id="subject" type="text" class="border border-red-500 w-full p-2">
                     </div>
                     <div class="flex flex-col gap-3 items-start">
                         <label for="message">Message</label>
-                        <textarea id="message" type="text" class="border border-sky-600 w-full p-2"
+                        <textarea id="message" type="text" class="border border-red-500 w-full p-2"
                             rows="10"></textarea>
                     </div>
                     <button
-                        class="p-3 w-fit cursor-pointer rounded-md bg-sky-600 text-white hover:text-black hover:bg-slate-100 transition-all">Send
+                        class="p-3 w-fit cursor-pointer rounded-md bg-red-500 text-white hover:text-black hover:bg-slate-100 transition-all">Send
                         Message</button>
                 </div>
 
             </div>
         </div>
     </section>
-    <footer class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-10 gap-7 ">
+    <footer class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-10 gap-7 xl:px-20">
         <div class="flex flex-col gap-3">
             <img src="./assets/img/logo.png" alt="logo" class="w-[130px]">
             <h2>Helping your products connect with the world through effective web solutions.</h2>
