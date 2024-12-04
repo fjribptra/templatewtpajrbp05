@@ -22,21 +22,6 @@ const swiper = new Swiper('.swiper', {
     scrollbar: {
         el: '.swiper-scrollbar',
     },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-        480: {
-            slidesPerView: 2,
-        },
-        640: {
-            slidesPerView: 2,
-        },
-        768: {
-            slidesPerView: 3,
-        },
-        1024: {
-            slidesPerView: 4,
-        },
-    },
+    slidesPerView: 1,
+    
 });
