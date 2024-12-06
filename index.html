@@ -11,221 +11,211 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Index - Box Solution Template</title>
+    <title>Home - Service AC Template</title>
 </head>
-<style>
-    progress::-webkit-progress-value {
-        background: #f97316;
-    }
-</style>
 
 <body class="font-sans">
-    <header class="sticky z-50 top-0 right-0 left-0 bg-slate-100 z-[9999]">
+    <header class="sticky z-50 top-0 right-0 left-0 bg-sky-600 z-[9999]">
         <div
-            class="w-full container mx-auto flex justify-between items-center px-5 py-5 xl:px-20 bg-transparent text-black opacity-100">
+            class="w-full container mx-auto flex flex-row-reverse justify-between items-center px-5 py-5 xl:px-20 bg-transparent text-black opacity-100">
 
             <div>
-                <img src="./assets/img/logo.png" alt="logo" class="w-[150px]">
+                <img src="./assets/img/logo-white.png" alt="logo" class="w-[150px]">
             </div>
             <div class="hamburger-menu relative flex flex-col justify-between gap-1 sm:hidden cursor-pointer">
-                <span class="bg-black w-6 h-1 rounded-md"></span>
-                <span class="bg-black w-6 h-1 rounded-md"></span>
-                <span class="bg-black w-6 h-1 rounded-md"></span>
+                <span class="bg-white w-6 h-1 rounded-md"></span>
+                <span class="bg-white w-6 h-1 rounded-md"></span>
+                <span class="bg-white w-6 h-1 rounded-md"></span>
             </div>
             <nav
-                class="hidden navigation z-99 fixed top-0 left-0 right-0 bottom-0 bg-slate-100 p-5 sm:static sm:block sm:bg-transparent sm:p-0">
+                class="hidden navigation z-99 fixed top-0 left-0 right-0 bottom-0 bg-sky-600 p-5 sm:static sm:block sm:bg-transparent sm:p-0">
                 <ul
-                    class="flex flex-col p-5 h-full bg-transparent opacity-100 text-black gap-4 rounded-xl sm:flex-row sm:p-0 transition-all">
+                    class="flex flex-col p-5 h-full bg-transparent opacity-100 text-white gap-4 rounded-xl sm:flex-row sm:p-0 transition-all">
                     <li><a href="index.html" class="nav-link hover:underline ease-linear">Home</a></li>
                     <li><a href="#about" class="nav-link hover:underline ease-linear">About</a></li>
-                    <li><a href="#team" class="nav-link hover:underline ease-linear">Team</a></li>
+                    <li><a href="#services" class="nav-link hover:underline ease-linear">Services</a></li>
                     <li><a href="#contact" class="nav-link hover:underline ease-linear">Contact</a></li>
                 </ul>
                 <button
-                    class="close-hamburger-menu absolute text-black top-7 right-10 text-2xl sm:hidden">&times;</button>
+                    class="close-hamburger-menu absolute text-white top-7 right-10 text-2xl sm:hidden">&times;</button>
             </nav>
         </div>
     </header>
     <section class="flex flex-col-reverse md:flex-col">
-        <section class="py-10">
-            <div
-                class="container mx-auto  p-5 grid grid-cols-1 md:grid-cols-2 gap-5 xl:gap-10 items-start text-black xl:px-20">
+        <section class="relative lg:py-20 bg-[url('./assets/img/Gallery-5.jpg')] bg-cover bg-center min-h-[600px]">
+            <div class="bg-black opacity-60 absolute top-0 left-0 right-0 bottom-0"></div>
+            <div class="container mx-auto lg:p-5 grid grid-cols-1 gap-5 xl:gap-10 items-start text-white xl:px-20">
                 <div class="z-[999] w-full h-full flex flex-col gap-10 justify-center">
-                    <h1 class="text-4xl z-[999]  font-bold lg:text-5xl 2xl:text-5xl opacity-100 uppercase">Innovative
-                        Box Solution Cardboard
-                        for Every Need
+                    <h1 class="mx-5 mt-20 lg:mt-0 text-4xl z-[999]  font-bold lg:text-5xl 2xl:text-5xl opacity-100">
+                        Mitra Terpercaya Anda untuk Layanan AC Profesional!
                     </h1>
-                    <a href="#pricing"
-                        class="z-[999] w-fit bg-orange-500 text-white px-5 py-3 rounded-md hover:bg-black hover:text-white transition-all ease-in 2xl:text-lg uppercase">Contact
-                        Us</a>
                 </div>
                 <div class="z-[999] w-full h-full flex flex-col gap-5">
-                    <p class="lg:text-xl z-[999] 2xl:text-xl">We are passionate about creating high-quality cardboard
-                        products that meet the diverse needs of our clients. With years of expertise in the cardboard
-                        manufacturing industry, we pride ourselves on our innovative designs, sustainable practices, and
-                        exceptional customer service.</p>
-                    <p class="lg:text-xl z-[999] 2xl:text-xl">Sustainability is at the heart of everything we do. We
-                        believe in creating products that are not only functional and aesthetically pleasing but also
-                        environmentally responsible. Our manufacturing processes prioritize the use of recycled
-                        materials and energy-efficient practices, ensuring that our operations contribute to a greener
-                        planet.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="relative container mx-auto xl:px-10">
-                <!-- Slider main container -->
-                <div class="swiper w-full">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class=" flex flex-col gap-5 p-5 bg-white justify-center items-center">
-                                <img src="./assets/img/Gallery-4.jpg" alt="1" class="w-full aspect-video">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class=" flex flex-col gap-5 p-5 bg-white justify-center items-center">
-                                <img src="./assets/img/Gallery-15.jpg" alt="1" class="w-full  aspect-video">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class=" flex flex-col gap-5 p-5 bg-white justify-center items-center">
-                                <img src="./assets/img/Gallery-13.jpg" alt="1" class="w-full  aspect-video">
-                            </div>
-                        </div>
-
-                    </div>
+                    <p class="mx-5 lg:text-xl z-[999] 2xl:text-xl">Dengan pengalaman yang luas dalam industri ini, kami
+                        hadir untuk memberikan pelayanan berkualitas tinggi, profesional, dan andal dalam merawat dan
+                        memperbaiki sistem pendinginan Anda.</p>
                 </div>
                 <div
-                    class="absolute md:w-[200px] lg:w-[400px] z-[99] -bottom-5 left-6 right-16 sm:left-16 sm:right-[15] md:left-40 bg-orange-500 text-white p-3 md:p-5 lg:p-10 rounded-md">
-                    <h2 class="text-md sm:text-lg md:text-xl lg:text-2xl">Looking to the Future for Digital Business
-                    </h2>
+                    class="mt-20 static lg:mt-0 lg:absolute lg:bottom-0 lg:left-0 z-[999] grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4">
+                    <div class="z-[999] grid grid-cols-1 sm:grid-cols-2 p-5 bg-sky-500">
+                        <div class="w-full p-5 flex justify-center items-center">
+                            <img class="w-[150px]" src="./assets/img/ac-3-1.svg" alt="">
+                        </div>
+                        <div class="flex flex-col justify-center gap-3">
+                            <h2 class="font-bold text-2xl">Profesional</h2>
+                            <p>Kami menyediakan layanan perawatan rutin.</p>
+                        </div>
+                    </div>
+                    <div class="z-[999] grid grid-cols-1 sm:grid-cols-2 p-5 bg-sky-800">
+                        <div class="w-full p-5 flex justify-center items-center">
+                            <img class="w-[150px]" src="./assets/img/Untitled-1-01.svg" alt="">
+                        </div>
+                        <div class="flex flex-col justify-center gap-3">
+                            <h2 class="font-bold text-2xl">Bergaransi</h2>
+                            <p>Mengutamakan kepuasan pelanggan kami</p>
+                        </div>
+                    </div>
+                    <div class="z-[999] grid grid-cols-1 sm:grid-cols-2 p-5 bg-blue-500">
+                        <div class="w-full p-5 flex justify-center items-center">
+                            <img class="w-[150px]" src="./assets/img/Untitled-2-01-1.svg" alt="">
+                        </div>
+                        <div class="flex flex-col justify-center gap-3">
+                            <h2 class="font-bold text-2xl">Terpercaya</h2>
+                            <p>Memberikan solusi terbaik kepada pelanggan kami</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+
     </section>
     <section id="about">
         <div
-            class="container mx-auto p-5 grid grid-cols-1 md:grid-cols-2 gap-10 items-start justify-center text-black md:py-20 xl:px-20">
-            <div class="z-[999] w-full flex flex-col gap-5 justify-center">
-                <h1 class="text-xl z-[999]  lg:text-xl 2xl:text-xl opacity-100">About Us
+            class="container mx-auto p-5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 items-start justify-center text-black px-5 py-20 md:py-20 xl:px-20">
+            <div class="z-[999] w-full flex flex-col gap-5 justify-center xl:col-span-2">
+                <h1 class="text-4xl z-[999]  font-bold lg:text-5xl 2xl:text-5xl opacity-100">Perawatan AC Berkala
                 </h1>
-                <h1 class="text-4xl z-[999]  font-bold lg:text-5xl 2xl:text-5xl opacity-100 uppercase">Humble
-                    Beginnings, Expansion and Innovation
-                </h1>
+                <p class="lg:text-xl z-[999] 2xl:text-xl">Kami menyediakan layanan perawatan rutin untuk menjaga
+                    performa optimal AC Anda. Mulai dari pembersihan filter hingga pengecekan komponen kritis, tim
+                    teknisi kami siap membantu Anda memperpanjang umur pakai AC dan mengoptimalkan efisiensi energinya.
+                </p>
+                <p class="lg:text-xl z-[999] 2xl:text-xl">Sebagai mitra mereka dalam menjaga kenyamanan suhu ruangan.
+                    Hubungi kami hari ini dan biarkan kami menjadi solusi terbaik untuk kebutuhan layanan AC Anda!
+                </p>
+                <a href="#services"
+                    class="bg-sky-600 text-white px-5 py-2 hover:text-black transition-all w-fit rounded-md">Layanan
+                    Kami</a>
             </div>
             <div class="z-[999] w-full flex flex-col gap-5 justify-center md:items-center">
-                <p class="lg:text-xl z-[999] 2xl:text-xl"><strong>In those early days</strong>, the business was run
-                    from a modest garage. We spent countless hours experimenting with different materials and designs,
-                    determined to create the perfect cardboard products. The initial clients were local businesses that
-                    quickly recognized the superior quality of the products. Word of mouth spread, and the demand for
-                    these handmade cardboard boxes grew steadily.</p>
+                <div class="bg-[url('./assets/img/Gallery-9.jpg')] bg-cover bg-center aspect-square w-full"></div>
             </div>
-            <div class="grid grid-cols-1 gap-3 md:col-span-2">
-                <h2 class="text-xl lg:text-xl 2xl:text-xl">Company by Number</h2>
-                <div class="w-full border-b border-black"></div>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
-                    <div class="flex flex-col gap-2">
-                        <h1 class="font-bold text-3xl">100+</h1>
-                        <h2>Client</h2>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <h1 class="font-bold text-3xl">80</h1>
-                        <h2>Product Variant</h2>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <h1 class="font-bold text-3xl">170</h1>
-                        <h2>Success Shipping</h2>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <h1 class="font-bold text-3xl">52</h1>
-                        <h2>Machine</h2>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
-    <section class="py-10">
+    <section id="services">
         <div
-            class="container mx-auto  p-5 grid grid-cols-1 md:grid-cols-2 gap-5 xl:gap-10 items-start text-black xl:px-20">
-            <div class="z-[999] w-full h-full flex flex-col gap-10 justify-center">
-                <h1 class="text-4xl z-[999]  font-bold lg:text-5xl 2xl:text-5xl opacity-100 uppercase">Leading the Way
-                    in Corporate Excellence
-                </h1>
-                <p class="lg:text-xl z-[999] 2xl:text-xl"><strong>As we look to the future</strong>, we remain committed
-                    to our core values of quality, sustainability, and innovation. We continue to explore new
-                    technologies and processes to enhance our products and services. Our goal is to not only meet but
-                    exceed the expectations of our customers, contributing to their success while promoting
-                    environmental stewardship.</p>
-                <div class="grid grid-cols-2 gap-5">
-                    <div class="flex flex-col gap-3">
-                        <label for="file">Factory Progress</label>
-                        <progress class="w-full text-red-500" id="file" value="90" max="100">
-                            <p>90%</p>
-                    </div>
-                    <div class="flex flex-col gap-3">
-                        <label for="file">Success in Business</label>
-                        <progress class="w-full text-red-500" id="file" value="100" max="100">
-                        </progress>
-                    </div>
-                    <div class="flex flex-col gap-3">
-                        <label for="file">Shipping Cover</label>
-                        <progress class="w-full text-red-500" id="file" value="70" max="100">
-                        </progress>
-                    </div>
-                    <div class="flex flex-col gap-3">
-                        <label for="file">Reject Products</label>
-                        <progress class="w-full text-red-500" id="file" value="3" max="100">
-                        </progress>
-                    </div>
-                </div>
-            </div>
-            <div class="z-[999] w-full h-full flex flex-col gap-5">
-                <div class="bg-[url('./assets/img/Gallery-16.jpg')] aspect-square bg-center bg-cover"></div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div
-            class="container mx-auto p-5 flex flex-col-reverse md:flex-row gap-10 items-start justify-center text-black md:py-20 xl:px-20">
-            <div class="z-[999] w-full grid grid-cols-1 md:grid-cols-2 gap-5 justify-center md:items-center">
+            class="container mx-auto p-5 flex flex-col-reverse gap-10 items-start justify-center text-black px-5 py-20 md:py-20 xl:px-20">
+            <div class="z-[999] w-full grid grid-cols-1 md:grid-cols-3 gap-5 justify-center md:items-center">
                 <div>
-                    <div class="bg-[url('./assets/img/Product-5.jpg')] aspect-video bg-cover bg-center"></div>
+                    <div class="bg-[url('./assets/img/Gallery-1.jpg')] aspect-video bg-cover bg-center"></div>
                     <div class="p-5 bg-slate-100">
-                        <h2 class="font-bold text-xl md:text-lg">Biodegradable Packaging</h2>
-                    </div>
-                </div>
-                <div>
-                    <div class="bg-[url('./assets/img/Product-1.jpg')] aspect-video bg-cover bg-center"></div>
-                    <div class="p-5 bg-slate-100">
-                        <h2 class="font-bold text-xl md:text-lg">Specialty Cardboard Items</h2>
+                        <h2 class="font-bold text-xl md:text-lg">Service AC Perumahan</h2>
                     </div>
                 </div>
                 <div>
                     <div class="bg-[url('./assets/img/Product-3.jpg')] aspect-video bg-cover bg-center"></div>
                     <div class="p-5 bg-slate-100">
-                        <h2 class="font-bold text-xl md:text-lg">Display Solutions</h2>
+                        <h2 class="font-bold text-xl md:text-lg">Service Mesin Dinamo</h2>
                     </div>
                 </div>
                 <div>
                     <div class="bg-[url('./assets/img/Product-2.jpg')] aspect-video bg-cover bg-center"></div>
                     <div class="p-5 bg-slate-100">
-                        <h2 class="font-bold text-xl md:text-lg">Shipping Boxes</h2>
+                        <h2 class="font-bold text-xl md:text-lg">Service AC Central Kantor</h2>
                     </div>
                 </div>
             </div>
             <div class="z-[999] w-full flex flex-col gap-5 justify-center">
-                <h1 class="text-xl z-[999]  lg:text-xl 2xl:text-xl opacity-100">About Us
+                <h1 class="text-xl z-[999]  lg:text-xl 2xl:text-xl opacity-100 uppercase">Yang terbaik untuk anda dan
+                    keluarga
                 </h1>
-                <h1 class="text-4xl z-[999]  font-bold lg:text-5xl 2xl:text-5xl opacity-100 uppercase">All Product
+                <h1 class="text-4xl z-[999]  font-bold lg:text-5xl 2xl:text-5xl opacity-100">Layanan yang kami
+                    tawarkan
                 </h1>
-                <p class="lg:text-xl z-[999] 2xl:text-xl"><strong>From the very beginning, </strong>sustainability was
-                    more than just a buzzword for us; it was a guiding principle. We were committed to minimizing our
-                    environmental impact by using recycled materials and adopting eco-friendly manufacturing processes.
-                    This commitment resonated with our customers, who were increasingly seeking sustainable alternatives
-                    in their packaging and display solutions.</p>
+            </div>
+        </div>
+    </section>
+    <section class="relative bg-[url('./assets/img/Gallery-2.jpg')] bg-cover bg-center">
+        <div class="bg-black absolute top-0 bottom-0 left-0 right-0 opacity-60"></div>
+        <div class="container px-5 py-20 mx-auto md:py-20 xl:px-20 grid grid-cols-1 lg:grid-cols-3">
+            <div class="text-white z-[999] flex flex-col gap-5 col-span-2">
+                <h1 class="text-4xl z-[999]  font-bold lg:text-5xl 2xl:text-5xl opacity-100">Our Distinctive Collection
+                </h1>
+                <p class="lg:text-xl z-[999] 2xl:text-xl">Tailor our designs to suit your clients’ unique preferences. Whether it’s a specific color, size, or design modification, we offer customization options to meet the diverse needs of our clientele. Collaborate with us to create bespoke pieces that elevate your brand and delight your customers.
+                </p>
+                <a href="#contact"
+                    class="bg-sky-600 text-white px-5 py-2 hover:text-black transition-all w-fit rounded-md">Contact</a>
+            </div>
+            <div class="w-full flex flex-col gap-5 justify-center md:items-center">
+                <!-- <div class="bg-[url('./assets/img/Gallery-9.jpg')] bg-cover bg-center aspect-square w-full"></div> -->
+            </div>
+        </div>
+    </section>
+    <section>
+        <div
+            class="container mx-auto p-5 flex flex-col-reverse gap-10 items-start justify-center text-black px-5 py-20 md:py-20 xl:px-20">
+            <div class="z-[999] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-self-stretch">
+                <div>
+                    <div class="bg-[url('./assets/img/Gallery-1.jpg')] aspect-video bg-cover bg-center"></div>
+                    <div class="p-5 bg-slate-100 flex flex-col gap-3">
+                        <h2 class="font-bold text-xl md:text-lg">Kenali dan Nikmati Udara Bersih di Rumah Anda</h2>
+                        <a href="#" class="hover:underline">Read more &raquo;</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-[url('./assets/img/Gallery-1.jpg')] aspect-video bg-cover bg-center"></div>
+                    <div class="p-5 bg-slate-100 flex flex-col gap-3">
+                        <h2 class="font-bold text-xl md:text-lg">Panduan Memilih Jenis AC yang Tepat: Sesuaikan Dengan
+                            Kebutuhan dan Lingkungann</h2>
+                        <a href="#" class="hover:underline">Read more &raquo;</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-[url('./assets/img/Gallery-1.jpg')] aspect-video bg-cover bg-center"></div>
+                    <div class="p-5 bg-slate-100 flex flex-col gap-3">
+                        <h2 class="font-bold text-xl md:text-lg">Panduan Memilih Jenis AC yang Tepat: Sesuaikan Dengan
+                            Kebutuhan dan Lingkungann</h2>
+                        <a href="#" class="hover:underline">Read more &raquo;</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-[url('./assets/img/Gallery-1.jpg')] aspect-video bg-cover bg-center"></div>
+                    <div class="p-5 bg-slate-100 flex flex-col gap-3">
+                        <h2 class="font-bold text-xl md:text-lg">Manfaat Bersih-Bersih Filter AC: Peningkatan Kesehatan dan Kualitas Udara</h2>
+                        <a href="#" class="hover:underline">Read more &raquo;</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-[url('./assets/img/Gallery-1.jpg')] aspect-video bg-cover bg-center"></div>
+                    <div class="p-5 bg-slate-100 flex flex-col gap-3">
+                        <h2 class="font-bold text-xl md:text-lg">Manfaat Perawatan Rutin untuk AC</h2>
+                        <a href="#" class="hover:underline">Read more &raquo;</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-[url('./assets/img/Gallery-1.jpg')] aspect-video bg-cover bg-center"></div>
+                    <div class="p-5 bg-slate-100 flex flex-col gap-3">
+                        <h2 class="font-bold text-xl md:text-lg">Berkontribusi pada Pelestarian Alam dan Hemat Energi</h2>
+                        <a href="#" class="hover:underline">Read more &raquo;</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="z-[999] w-full flex flex-col gap-5 justify-center">
+                <h1 class="text-xl z-[999]  lg:text-xl 2xl:text-xl opacity-100 uppercase">Update berita kegiatan</h1>
+                <h1 class="text-4xl z-[999]  font-bold lg:text-5xl 2xl:text-5xl opacity-100">Kegiatan Harian Kami
+                </h1>
             </div>
         </div>
     </section>
@@ -240,7 +230,7 @@
                 <div class="flex flex-col gap-5 p-5 shadow-xl">
                     <div class="flex gap-5 items-center">
                         <div class="bg-slate-100 p-2 rounded-full aspect-square w-[50px] h-[50px]">
-                            <i class="fa-solid fa-location-dot text-orange-500 text-3xl"></i>
+                            <i class="fa-solid fa-location-dot text-sky-600 text-3xl"></i>
                         </div>
                         <div class="flex items-start flex-col text-start">
                             <h2 class="font-bold">Address</h2>
@@ -249,7 +239,7 @@
                     </div>
                     <div class="flex gap-5 items-center">
                         <div class="bg-slate-100 p-2 rounded-full aspect-square w-[50px] h-[50px]">
-                            <i class="fa-solid fa-phone text-orange-500 text-3xl"></i>
+                            <i class="fa-solid fa-phone text-sky-600 text-3xl"></i>
                         </div>
                         <div class="flex items-start flex-col text-start">
                             <h2 class="font-bold">Call Us</h2>
@@ -258,7 +248,7 @@
                     </div>
                     <div class="flex gap-5 items-center">
                         <div class="bg-slate-100 p-2 rounded-full aspect-square w-[50px] h-[50px]">
-                            <i class="fa-solid fa-envelope text-orange-500 text-3xl"></i>
+                            <i class="fa-solid fa-envelope text-sky-600 text-3xl"></i>
                         </div>
                         <div class="flex items-start flex-col text-start">
                             <h2 class="font-bold">Email Us</h2>
@@ -276,24 +266,24 @@
                     <div class="flex gap-5">
                         <div class="flex flex-col gap-3 items-start w-full">
                             <label for="name">Your Name</label>
-                            <input id="name" type="text" class="border border-orange-500 w-full p-2">
+                            <input id="name" type="text" class="border border-sky-600 w-full p-2">
                         </div>
                         <div class="flex flex-col gap-3 items-start w-full">
                             <label for="email">Your Email</label>
-                            <input id="email" type="text" class="border border-orange-500 w-full p-2">
+                            <input id="email" type="text" class="border border-sky-600 w-full p-2">
                         </div>
                     </div>
                     <div class="flex flex-col gap-3 items-start">
                         <label for="subject">Subject</label>
-                        <input id="subject" type="text" class="border border-orange-500 w-full p-2">
+                        <input id="subject" type="text" class="border border-sky-600 w-full p-2">
                     </div>
                     <div class="flex flex-col gap-3 items-start">
                         <label for="message">Message</label>
-                        <textarea id="message" type="text" class="border border-orange-500 w-full p-2"
+                        <textarea id="message" type="text" class="border border-sky-600 w-full p-2"
                             rows="10"></textarea>
                     </div>
                     <button
-                        class="p-3 w-fit cursor-pointer rounded-md bg-orange-500 text-white hover:text-black hover:bg-slate-100 transition-all">Send
+                        class="p-3 w-fit cursor-pointer rounded-md bg-sky-600 text-white hover:text-black hover:bg-slate-100 transition-all">Send
                         Message</button>
                 </div>
 
